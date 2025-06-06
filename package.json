@@ -1,0 +1,15 @@
+{
+  "name": "lit-aura",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "npx tailwindcss -i ./src/input.css -o ./public/output.css --watch",
+    "dev": "tailwindcss -i ./src/input.css -o ./public/output.css --watch"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.21",
+    "postcss": "^8.4.35",
+    "tailwindcss": "^3.4.1"
+  }
+}
