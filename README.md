@@ -1,6 +1,3 @@
-# LitAura_A_Book_Recomender
-LitAura: The Book Recommender for the book lovers
-
 # LitAura – A Book Recommender 📚
 
 **LitAura** is a mood and genre-based book recommender built using HTML, Tailwind CSS, and JavaScript.
