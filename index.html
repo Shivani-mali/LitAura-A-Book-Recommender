@@ -21,16 +21,18 @@
     </div>
 
     <!-- Hamburger Button -->
-    <button id="menu-toggle" class="sm:hidden focus:outline-none">
-      <svg class="w-6 h-6 text-gray-800" fill="none" stroke="currentColor" viewBox="0 0 24 24"
-        xmlns="http://www.w3.org/2000/svg">
-        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-          d="M4 6h16M4 12h16M4 18h16"></path>
-      </svg>
+    <button id="menu-toggle" class="sm:hidden focus:outline-none z-20">
+      <!-- Tailwind-based Hamburger Icon -->
+      <div class="space-y-1">
+        <div class="w-6 h-0.5 bg-gray-800"></div>
+        <div class="w-6 h-0.5 bg-gray-800"></div>
+        <div class="w-6 h-0.5 bg-gray-800"></div>
+      </div>
     </button>
 
     <!-- Menu Links -->
-    <div id="menu" class="hidden sm:flex flex-col sm:flex-row sm:items-center space-y-2 sm:space-y-0 sm:space-x-4 absolute sm:static top-16 right-6 bg-white sm:bg-transparent p-4 sm:p-0 rounded shadow sm:shadow-none">
+    <div id="menu"
+      class="hidden sm:flex flex-col sm:flex-row sm:items-center space-y-2 sm:space-y-0 sm:space-x-4 absolute sm:static top-20 right-6 bg-white sm:bg-transparent p-4 sm:p-0 rounded shadow sm:shadow-none z-10 transition-all duration-300">
       <a href="index.html" class="hover:text-pink-600 font-bold">Home</a>
       <a href="favorites.html" class="hover:text-pink-600 font-bold">Favorites</a>
       <a href="about.html" class="hover:text-pink-600 font-bold">About</a>
@@ -77,8 +79,10 @@
   <!-- 📜 Script -->
   <script>
     // Toggle menu visibility on small screens
-    document.getElementById("menu-toggle").addEventListener("click", function () {
-      const menu = document.getElementById("menu");
+    const toggle = document.getElementById("menu-toggle");
+    const menu = document.getElementById("menu");
+
+    toggle.addEventListener("click", () => {
       menu.classList.toggle("hidden");
     });
   </script>
