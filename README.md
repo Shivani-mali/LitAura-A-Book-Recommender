@@ -2,8 +2,8 @@
 
 **LitAura** is a mood and genre-based book recommender built using HTML, Tailwind CSS, and JavaScript.
 
-## 🌐 Live Site
-[👉 View it here](https://shivani-mali.github.io/LitAura_A_Book_Recommender/)
+## 🌐 Live Site  
+[👉 View it here](https://shivani-mali.github.io/LitAura-A-Book-Recommender/)
 
 ## 💡 Features
 - Emotion & genre-based book suggestions
